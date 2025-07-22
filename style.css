@@ -1,98 +1,148 @@
-/* Basic Reset */
-* {
+/* Base Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0f0f0f;
+  color: #ffffff;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-/* Body Styling */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
-  color: #fff;
   line-height: 1.6;
 }
 
-/* Header */
-header {
-  background-color: #1a1a1a;
-  padding: 2rem;
-  text-align: center;
-  border-bottom: 2px solid #444;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-header h1 {
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+.hero h1 {
   font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  margin: 0;
+  color: #ff6b6b;
 }
 
-/* Package Section */
+.tagline {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 10px 0 0;
+}
+
+/* Packages Section */
 .packages {
-  padding: 2rem;
-  text-align: center;
+  padding: 40px 0;
 }
 
 .packages h2 {
+  text-align: center;
   font-size: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 30px;
+  color: #ff6b6b;
+}
+
+.package-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 
 .package {
-  background-color: #1c1c1c;
+  background: #1e1e2e;
   border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  width: 90%;
-  max-width: 400px;
-  box-shadow: 0 0 10px rgba(255,255,255,0.05);
-  transition: 0.3s;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .package:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px);
 }
 
 .package h3 {
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #ffffff;
 }
 
 .package ul {
   list-style: none;
+  padding: 0;
 }
 
-.package li {
-  margin: 0.5rem 0;
+.package ul li {
+  margin: 10px 0;
+  position: relative;
+  padding-left: 20px;
 }
 
-/* Tier Colors */
-.bronze {
-  border: 2px solid #cd7f32;
+.package ul li::before {
+  content: "✓";
+  color: #4caf50;
+  position: absolute;
+  left: 0;
 }
 
-.silver {
-  border: 2px solid #c0c0c0;
+/* Gumroad Button */
+.gumroad-button {
+  display: inline-block;
+  background: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 15px;
+  transition: background 0.3s ease;
 }
 
-.gold {
-  border: 2px solid #ffd700;
-}
-
-.platinum {
-  border: 2px solid #b56ff0;
+.gumroad-button:hover {
+  background: #ff4757;
 }
 
 /* Contact Section */
 .contact {
-  background-color: #1a1a1a;
-  padding: 2rem;
   text-align: center;
-  border-top: 2px solid #444;
+  padding: 40px 0;
+  background: #1a1a2e;
+  border-radius: 10px;
+  margin: 40px 0;
 }
 
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6b6b;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+/* Footer */
 footer {
-  background-color: #111;
   text-align: center;
-  padding: 1rem;
+  padding: 20px 0;
+  background: #1a1a2e;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
   font-size: 0.9rem;
-  color: #aaa;
+  opacity: 0.8;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .package-grid {
+    grid-template-columns: 1fr;
+  }
 }
