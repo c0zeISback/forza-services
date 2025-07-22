@@ -1,0 +1,98 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0f0f0f;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Package Section */
+.packages {
+  padding: 2rem;
+  text-align: center;
+}
+
+.packages h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.package {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin: 1rem auto;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  transition: 0.3s;
+}
+
+.package:hover {
+  transform: scale(1.03);
+}
+
+.package h3 {
+  margin-bottom: 1rem;
+}
+
+.package ul {
+  list-style: none;
+}
+
+.package li {
+  margin: 0.5rem 0;
+}
+
+/* Tier Colors */
+.bronze {
+  border: 2px solid #cd7f32;
+}
+
+.silver {
+  border: 2px solid #c0c0c0;
+}
+
+.gold {
+  border: 2px solid #ffd700;
+}
+
+.platinum {
+  border: 2px solid #b56ff0;
+}
+
+/* Contact Section */
+.contact {
+  background-color: #1a1a1a;
+  padding: 2rem;
+  text-align: center;
+  border-top: 2px solid #444;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
